@@ -2,17 +2,17 @@ name = "edgetunnel"
 main = "src/index.js"
 compatibility_date = "2026-08-09"
 
+# Custom domain (optional)
+# Uncomment and replace with your own domain.
+# routes = [
+#   { pattern = "your-domain.com", custom_domain = true }
+# ]
+
 [observability]
 enabled = true
 
 [observability.logs]
 head_sampling_rate = 0.1
-
-# [Routes]
-# Uncomment and replace with your own domain
-# routes = [
-# 	{ pattern = "your-domain.com", custom_domain = true }
-# ]
 
 [vars]
 # [Secrets: do not place ADMIN, UUID, KEY, or API tokens in this file]
